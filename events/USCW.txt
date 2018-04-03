@@ -1,0 +1,519 @@
+﻿###########################
+# USCW Events
+###########################
+
+add_namespace = uscw
+
+# US Civil War (Democrats won the election)
+country_event = {
+	id = uscw.1
+	title = uscw.1.t
+	desc = uscw.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+#	trigger = {
+#		NOT = { has_global_flag = uscw_over }
+#		tag = USA
+#		has_defensive_war = no
+#		NOT = { has_government = neutrality }
+#		date > 1936.2.16 # Trigger at some point after 1936 elections
+#	}
+
+	is_triggered_only = yes
+
+#	mean_time_to_happen = {
+#		days = 151	# Historical outbreak time after elections
+#	}
+	
+	option = { # Support Republicans
+		name = uscw.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 375
+			set_cosmetic_tag = USCW_Republicans
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = democratic
+				size = 0.5
+				capital = 361
+				states = { 357 358 359 360 361 362 376 378 379 382 385 386 391 393 394 395 629 686 }
+				# 261 363 365 366 377
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = democratic
+				}
+				load_oob = "USCW_Democrats"
+				load_oob = "USCW_CO"
+				load_oob = "USCW_MI"
+				load_oob = "USCW_MN"
+				load_oob = "USCW_PA"
+				load_oob = "USCW_WI"
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				#country_event = { id = uscw.3 days = 1 }
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.35
+				}
+				random_list = {
+					50 = {
+						transfer_state = 261
+						load_oob = "USCW_OH"
+					}
+					50 = {
+						USA = {
+							load_oob = "USCW_OH"
+						}
+					}
+				}
+				random_list = {
+					30 = {
+						transfer_state = 363
+						load_oob = "USCW_NC"
+					}
+					70 = {
+						USA = {
+							load_oob = "USCW_NC"
+						}
+					}
+				}
+				random_list = {
+					30 = {
+						transfer_state = 365
+						load_oob = "USCW_GA"
+					}
+					70 = {
+						USA = {
+							load_oob = "USCW_GA"
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						transfer_state = 366
+						load_oob = "USCW_FL"
+					}
+					50 = {
+						USA = {
+							load_oob = "USCW_FL"
+						}
+					}
+				}
+				random_list = {
+					30 = {
+						transfer_state = 377
+						load_oob = "USCW_AZ"
+					}
+					70 = {
+						USA = {
+							load_oob = "USCW_AZ"
+						}
+					}
+				}
+			}
+#			news_event = { hours = 6 id = news.63 }
+			set_global_flag = US_civil_war
+			
+			load_oob = "USCW_Republicans"
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = democratic
+				}
+				set_cosmetic_tag = USCW_Democrats
+			}
+
+			#country_event = { id = uscw.2 days = 7 }
+		}
+		custom_effect_tooltip = us_republicans_chosen
+	}
+	option = { # Support Democrats
+		name = uscw.1.b
+		hidden_effect = {
+			set_cosmetic_tag = USCW_Democrats
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.5
+				capital = 375
+				states = { 364 367 368 369 370 371 372 373 374 375 380 381 383 384 387 388 389 390 392 396 463 }
+				# 261 363 365 366 377
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = neutrality
+				}
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				#country_event = { id = uscw.2 days = 1 }
+				load_oob = "USCW_Republicans"
+				random_list = {
+					50 = {
+						transfer_state = 261
+						load_oob = "USCW_OH"
+					}
+					50 = {
+						USA = {
+							load_oob = "USCW_OH"
+						}
+					}
+				}
+				random_list = {
+					70 = {
+						transfer_state = 363
+						load_oob = "USCW_NC"
+					}
+					30 = {
+						USA = {
+							load_oob = "USCW_NC"
+						}
+					}
+				}
+				random_list = {
+					70 = {
+						transfer_state = 365
+						load_oob = "USCW_GA"
+					}
+					30 = {
+						USA = {
+							load_oob = "USCW_GA"
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						transfer_state = 366
+						load_oob = "USCW_FL"
+					}
+					50 = {
+						USA = {
+							load_oob = "USCW_FL"
+						}
+					}
+				}
+				random_list = {
+					70 = {
+						transfer_state = 377
+						load_oob = "USCW_AZ"
+					}
+					30 = {
+						USA = {
+							load_oob = "USCW_AZ"
+						}
+					}
+				}
+			}
+#			news_event = { hours = 6 id = news.63 }
+			set_global_flag = US_civil_war
+			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}	
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = neutrality
+				}
+				set_cosmetic_tag = USCW_Republicans
+			}
+			load_oob = "USCW_Democrats"
+			load_oob = "USCW_CO"
+			load_oob = "USCW_MI"
+			load_oob = "USCW_MN"
+			load_oob = "USCW_PA"
+			load_oob = "USCW_WI"
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			#country_event = { id = uscw.3 days = 7 }
+		}
+		custom_effect_tooltip = us_democrats_chosen
+	}
+}
+
+# US Civil War (Republicans won the election)
+country_event = {
+	id = uscw.2
+	title = uscw.2.t
+	desc = uscw.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+#	trigger = {
+#		NOT = { has_global_flag = uscw_over }
+#		tag = USA
+#		has_defensive_war = no
+#		has_government = neutrality
+#		date > 1936.2.16 # Trigger at some point after 1936 elections
+#	}
+
+	is_triggered_only = yes
+
+#	mean_time_to_happen = {
+#		days = 151	# Historical outbreak time after elections
+#	}
+	
+	option = { # Support Republicans
+		name = uscw.2.a
+		hidden_effect = {
+			set_capital = 375
+			set_cosmetic_tag = USCW_Republicans
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = democratic
+				size = 0.5
+				capital = 361
+				states = { 357 358 359 361 362 376 378 379 385 386 395 629 686 }
+				# 360 382 391 393
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = democratic
+				}
+				load_oob = "USCW_Democrats"
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				#country_event = { id = uscw.3 days = 1 }
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.35
+				}
+				random_list = {
+					50 = {
+						transfer_state = 360
+						load_oob = "USCW_PA"
+					}
+					50 = {
+						USA = {
+							load_oob = "USCW_PA"
+						}
+					}
+				}
+				random_list = {
+					70 = {
+						transfer_state = 382
+						load_oob = "USCW_CO"
+					}
+					30 = {
+						USA = {
+							load_oob = "USCW_CO"
+						}
+					}
+				}
+				random_list = {
+					70 = {
+						transfer_state = 391
+						load_oob = "USCW_MN"
+					}
+					30 = {
+						USA = {
+							load_oob = "USCW_MN"
+						}
+					}
+				}
+				random_list = {
+					70 = {
+						transfer_state = 393
+						load_oob = "USCW_MI"
+					}
+					30 = {
+						USA = {
+							load_oob = "USCW_MI"
+						}
+					}
+				}
+			}
+#			news_event = { hours = 6 id = news.63 }
+			set_global_flag = US_civil_war
+			
+			load_oob = "USCW_Republicans"
+			load_oob = "USCW_AZ"
+			load_oob = "USCW_FL"
+			load_oob = "USCW_GA"
+			load_oob = "USCW_OH"
+			load_oob = "USCW_NC"
+			load_oob = "USCW_WI"
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = democratic
+				}
+				set_cosmetic_tag = USCW_Democrats
+			}
+
+			#country_event = { id = uscw.2 days = 7 }
+		}
+		custom_effect_tooltip = us_republicans_chosen
+	}
+	option = { # Support Democrats
+		name = uscw.2.b
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_cosmetic_tag = USCW_Democrats
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.5
+				capital = 375
+				states = { 261 363 364 365 366 367 368 369 370 371 372 373 374 375 377 380 381 383 384 387 388 389 390 392 394 396 463 }
+				# 360 382 391 393
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = neutrality
+				}
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				#country_event = { id = uscw.2 days = 1 }
+				load_oob = "USCW_Republicans"
+				load_oob = "USCW_AZ"
+				load_oob = "USCW_FL"
+				load_oob = "USCW_GA"
+				load_oob = "USCW_OH"
+				load_oob = "USCW_NC"
+				load_oob = "USCW_WI"
+				random_list = {
+					50 = {
+						transfer_state = 360
+						load_oob = "USCW_PA"
+					}
+					50 = {
+						USA = {
+							load_oob = "USCW_PA"
+						}
+					}
+				}
+				random_list = {
+					30 = {
+						transfer_state = 382
+						load_oob = "USCW_CO"
+					}
+					70 = {
+						USA = {
+							load_oob = "USCW_CO"
+						}
+					}
+				}
+				random_list = {
+					30 = {
+						transfer_state = 391
+						load_oob = "USCW_MN"
+					}
+					70 = {
+						USA = {
+							load_oob = "USCW_MN"
+						}
+					}
+				}
+				random_list = {
+					30 = {
+						transfer_state = 393
+						load_oob = "USCW_MI"
+					}
+					70 = {
+						USA = {
+							load_oob = "USCW_MI"
+						}
+					}
+				}
+
+			}
+#			news_event = { hours = 6 id = news.63 }
+			set_global_flag = US_civil_war
+			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}	
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = neutrality
+				}
+				set_cosmetic_tag = USCW_Republicans
+			}
+			load_oob = "USCW_Democrats"
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			#country_event = { id = uscw.3 days = 7 }
+		}
+		custom_effect_tooltip = us_democrats_chosen
+	}
+}
+
+# Civil war over. Move Capital
+country_event = {
+	id = uscw.8
+	title = uscw.8.t
+	desc = uscw.8.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	trigger = {
+		original_tag = USA
+		has_government = neutrality
+#		has_global_flag = republican_victory
+		owns_state = 361
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = uscw.8.a
+		set_capital = 361
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = uscw.8.b
+	}
+}

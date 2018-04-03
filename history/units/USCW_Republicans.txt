@@ -1,0 +1,447 @@
+﻿division_template = {
+	name = "National Guard"
+	is_locked = yes
+	division_names_group = USA_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+# 364 367 368 369 370 371 372 373 374 375 380 381 383 384 387 388 389 390 392 396 463
+
+units = {
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7202  # Charleston
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7202  # Charleston
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7202  # Charleston
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7480  # Mobile
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7480  # Mobile
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7480  # Mobile
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12735  # Birmingham
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12735  # Birmingham
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12735  # Birmingham
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12501  # Nashville
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12501  # Nashville
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12501  # Nashville
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6696  # Louisville
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6696  # Louisville
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6696  # Louisville
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4464  # Biloxi
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4464  # Biloxi
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7552  # New Orleans
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7552  # New Orleans
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7552  # New Orleans
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12489  # Little Rock
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12489  # Little Rock
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4569  # St Louis
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4569  # St Louis
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4569  # St Louis
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10717  # Kansas City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10717  # Kansas City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10717  # Kansas City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806  # Tulsa
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806  # Tulsa
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806  # Tulsa
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10337  # Houston
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10337  # Houston
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10337  # Houston
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3960  # Dallas
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3960  # Dallas
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3960  # Dallas
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12782  # San Antonio
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12782  # San Antonio
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12782  # San Antonio
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4865  # Salt Lake City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4865  # Salt Lake City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4865  # Salt Lake City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12586  # Omaha
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4860  # Great Falls
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1836  # Bismarck
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1747  # Rapid City
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1770  # Des Moines
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1770  # Des Moines
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1770  # Des Moines
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1595  # Indianapolis
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1595  # Indianapolis
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1595  # Indianapolis
+		division_template = "National Guard"
+	}
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13091  # Anchorage
+		division_template = "National Guard"
+	}
+}
